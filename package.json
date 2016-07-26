@@ -1,0 +1,40 @@
+{
+  "author": "Donald Disha",
+  "license": "MIT",
+  "name": "htmllint",
+  "version": "0.0.1",
+  "description": "Linter for static HTML files",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/dishad/HTMLLint.git"
+  },
+  "bugs": {
+    "url": "https://github.com/dishad/HTMLLint/issues"
+  },
+  "keywords": [
+    "html",
+    "lint",
+    "Analysis"
+  ],
+  "main": "./index",
+  "dependencies": {
+    "async": "^2.0.1",
+    "colors": "^1.1.2",
+    "commander": "^2.9.0",
+    "glob": "^7.0.5",
+    "parse-glob": "3.0.4",
+    "request": "^2.74.0",
+    "htmlparser2": "^3.9.1",
+    "xml": "1.0.1"
+  },
+  "devDependencies": {
+    "mocha": "2.4.5",
+    "eslint": "^3.1.1"
+  },
+  "bin": {
+    "htmlhint": "./bin/htmllint"
+  },
+  "scripts": {
+    "eslint": "./node_modules/.bin/eslint ."
+  }
+}
