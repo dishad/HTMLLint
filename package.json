@@ -35,9 +35,9 @@
     "grunt-contrib-watch" : "~1.0.0"
   },
   "bin": {
-    "htmllint": "./bin/htmllint.js"
+    "htmllint": "./bin/htmllint"
   },
   "scripts": {
-    "eslint": "./node_modules/.bin/eslint ."
+    "eslint": "./node_modules/.bin/eslint src/"
   }
 }

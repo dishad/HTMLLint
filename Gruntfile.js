@@ -1,26 +1,23 @@
 module.exports = function (grunt) {
+
   // load plugins
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-contrib-uglify');
 
-
-    grunt.initConfig({
-
-    // define source files and their destinations
+  grunt.initConfig({
     uglify: {
-      my_target: {
+      uglifyTarget: {
+        // Specifies dest:source
         files: {
           'lib/htmllint.js': 'src/**/*.js'
         }
       }
     },
     watch: {
-        js:  { files: 'src/**/*.js', tasks: [ 'uglify' ] },
+      js:  { files: 'src/**/*.js', tasks: [ 'uglify' ] },
     }
-});
+  });
 
-
-// register at least this one task
-grunt.registerTask('default', [ 'uglify' ]);
-
+  // register at least this one task
+  grunt.registerTask('default', [ 'uglify' ]);
 };
